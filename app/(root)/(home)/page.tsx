@@ -1,5 +1,7 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
 
+
+
 const Home = () => {
   const now = new Date();
 
@@ -21,6 +23,9 @@ const Home = () => {
       </div>
 
       <MeetingTypeList />
+      <div className='flex flex-col mt-4 text-lg top-10 items-center justify-center font-semibold'>
+        <p className='text-opacity-5 text-opacity'>Developed by Atharva Suryawanshi</p>
+      </div>
     </section>
   );
 };
