@@ -5,8 +5,8 @@ import MeetingTypeList from '@/components/MeetingTypeList';
 const Home = () => {
   const now = new Date();
 
-  const time = now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
-  const date = (new Intl.DateTimeFormat('en-IN', { dateStyle: 'full' })).format(now);
+  const time = now.toLocaleTimeString('UTC', { hour: '2-digit', minute: '2-digit' });
+  const date = (new Intl.DateTimeFormat('UTC', { dateStyle: 'full' })).format(now);
 
   return (
     <section className="flex size-full flex-col gap-5 text-white">
